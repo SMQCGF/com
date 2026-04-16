@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>沙漠倾城 - 官方音乐网站</title>
+    <title>沙漠倾城官方音乐网站</title> <!-- 修改：去掉标题中的"-" -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -495,6 +495,36 @@
             margin-bottom: 10px;
         }
 
+        /* 社交媒体二维码样式 */
+        .social-media-qr {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .qr-item {
+            text-align: center;
+            width: 120px;
+        }
+
+        .qr-code {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            background-color: white;
+            padding: 5px;
+        }
+
+        .qr-item p {
+            color: var(--medium-text);
+            font-size: 0.9rem;
+        }
+
         /* 页脚 */
         footer {
             background-color: var(--darker-bg);
@@ -557,6 +587,16 @@
                 margin-right: 0;
                 margin-bottom: 20px;
             }
+            .social-media-qr {
+                gap: 20px;
+            }
+            .qr-item {
+                width: 100px;
+            }
+            .qr-code {
+                width: 80px;
+                height: 80px;
+            }
         }
     </style>
 </head>
@@ -582,8 +622,8 @@
     <!-- 英雄区/首页 -->
     <section id="home" class="hero">
         <div class="container hero-content">
-            <!-- 头像图片URL需替换为您提供的实际链接 -->
-            <img src="https://via.placeholder.com/200x200/b8860b/ffffff?text=沙漠倾城" alt="沙漠倾城头像" class="artist-avatar" id="artistAvatar">
+            <!-- 更新：使用您提供的沙漠倾城头像链接 -->
+            <img src="https://github.com/SMQCGF/com/raw/main/%E6%B2%99%E6%BC%A0%E4%B8%B6%E5%80%BE%E5%9F%8E%E5%A4%B4%E5%83%8F.jpg" alt="沙漠倾城头像" class="artist-avatar" id="artistAvatar">
             <h1>沙漠丶倾城</h1>
             <p>独立流行音乐人 | 中国音乐著作权协会会员</p>
             <div>
@@ -604,7 +644,7 @@
                 <div class="about-text">
                     <h3>张斌，艺名 沙漠丶倾城 / 沙漠倾城</h3>
                     <p>来自江苏苏州，是中国音乐著作权协会会员，一位独立的流行音乐人。他的音乐风格以伤感抒情为主，擅长用细腻的歌词和动人的旋律，表达对生活与爱情的深刻感悟。</p>
-                    <p>通过独特的音乐风格和深刻的情感表达，沙漠倾城的作品为听众带来了丰富的听觉享受和情感体验，在QQ音乐、酷狗音乐、酷我音乐、网易云音乐等各大平台上获得了众多听众的喜爱与共鸣。</p>
+                    <p>通过独特的音乐风格和深刻的情感表达，沙漠倾城的作品为听众带来了丰富的听觉享受和情感体验，在QQ音乐、酷狗音乐、酷我音乐、网易云音乐、抖音、全民K歌等各大平台上获得了众多听众的喜爱与共鸣。</p>
                     <p>他的创作源于内心最真实的情感，每一首歌都是一个故事，期待与你在旋律中相遇。</p>
                 </div>
                 <!-- 此处可放置第二张形象图 -->
@@ -679,9 +719,10 @@
             <h2 class="section-title">在线聆听</h2>
             <div class="player-container">
                 <div class="player-header">
-                    <img src="https://via.placeholder.com/120x120/b8860b/0a0a12?text=Album" alt="专辑封面" class="album-cover" id="currentAlbumCover">
+                    <!-- 更新：那天下雨了专辑封面使用指定图片 -->
+                    <img src="https://github.com/SMQCGF/com/raw/main/IMG_20251231_201524.jpg" alt="那天下雨了专辑封面" class="album-cover" id="currentAlbumCover">
                     <div class="song-info">
-                        <h3 id="currentSongTitle">数星星等你</h3>
+                        <h3 id="currentSongTitle">那天下雨了</h3>
                         <p id="currentArtist">沙漠丶倾城</p>
                         <p id="currentAlbum">《如果那天没有错过》</p>
                     </div>
@@ -790,8 +831,29 @@
             <div class="footer-content">
                 <h2 style="font-size: 2rem; margin-bottom: 20px; color: var(--primary-color);">沙漠倾城</h2>
                 <p style="max-width: 600px; margin: 0 auto 30px; color: var(--medium-text);">感谢您的聆听与支持。音乐是情感的桥梁，期待我的作品能与您产生共鸣。</p>
+                
+                <!-- 新增：社交媒体二维码 -->
+                <div class="social-media-qr">
+                    <div class="qr-item">
+                        <img src="https://github.com/SMQCGF/com/raw/main/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" alt="微信公众号" class="qr-code">
+                        <p>微信公众号</p>
+                    </div>
+                    <div class="qr-item">
+                        <img src="https://github.com/SMQCGF/com/raw/main/%E6%8A%96%E9%9F%B3.jpg" alt="抖音" class="qr-code">
+                        <p>抖音</p>
+                    </div>
+                    <div class="qr-item">
+                        <img src="https://github.com/SMQCGF/com/raw/main/%E5%BF%AB%E6%89%8B.jpg" alt="快手" class="qr-code">
+                        <p>快手</p>
+                    </div>
+                    <div class="qr-item">
+                        <img src="https://github.com/SMQCGF/com/raw/main/%E5%B0%8F%E7%BA%A2%E4%B9%A6.jpg" alt="小红书" class="qr-code">
+                        <p>小红书</p>
+                    </div>
+                </div>
+                
+                <!-- 原有的社交媒体图标（保留） -->
                 <div style="display: flex; justify-content: center; gap: 20px; font-size: 1.5rem; margin-bottom: 30px;">
-                    <!-- 此处可添加社交媒体链接 -->
                     <a href="#" title="微信"><i class="fab fa-weixin"></i></a>
                     <a href="#" title="微博"><i class="fab fa-weibo"></i></a>
                     <a href="#" title="邮箱"><i class="fas fa-envelope"></i></a>
@@ -827,56 +889,36 @@
                 });
             });
 
-            // 2. 音乐播放器数据
-            // **重要提示**：以下 `audioUrl` 是示例链接。您需要将其替换为您提供的、可公开访问的真实音频文件URL（如MP3链接）。
-            // 您提供的酷我音乐详情页链接（如 https://www.kuwo.cn/play_detail/547722336）是网页，不是直接的音频文件。
-            // 您需要获取每首歌的直接音频文件地址（.mp3格式）替换下方链接，播放器才能正常工作。
+            // 2. 音乐播放器数据 - 更新为您提供的3首歌曲
             const songs = [
                 {
-                    title: "数星星等你",
+                    title: "那天下雨了",
                     artist: "沙漠丶倾城",
                     album: "《如果那天没有错过》",
-                    duration: "4:25",
-                    // audioUrl: "https://您提供的真实MP3链接/数星星等你.mp3", // 请替换
-                    audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", // 示例音乐
-                    coverUrl: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                },
-                {
-                    title: "我以为我能忘",
-                    artist: "沙漠丶倾城",
-                    album: "《如果那天没有错过》",
-                    duration: "5:21",
-                    // audioUrl: "https://您提供的真实MP3链接/我以为我能忘.mp3", // 请替换
-                    audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3", // 示例音乐
-                    coverUrl: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    duration: "4:30", // 估计时长，实际播放时会自动获取
+                    // 使用您提供的GitHub MP3链接
+                    audioUrl: "https://github.com/SMQCGF/com/raw/main/%E9%82%A3%E5%A4%A9%E4%B8%8B%E9%9B%A8%E4%BA%86.mp3",
+                    // 更新：专辑封面使用指定图片
+                    coverUrl: "https://github.com/SMQCGF/com/raw/main/IMG_20251231_201524.jpg"
                 },
                 {
                     title: "我是你可有可无的人",
                     artist: "沙漠丶倾城",
                     album: "单曲",
-                    duration: "4:30",
-                    // audioUrl: "https://您提供的真实MP3链接/我是你可有可无的人.mp3", // 请替换
-                    audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3", // 示例音乐
+                    duration: "4:20", // 估计时长，实际播放时会自动获取
+                    // 使用您提供的GitHub MP3链接
+                    audioUrl: "https://github.com/SMQCGF/com/raw/main/%E6%88%91%E6%98%AF%E4%BD%A0%E5%8F%AF%E6%9C%89%E5%8F%AF%E6%97%A0%E7%9A%84%E4%BA%BA.mp3",
                     coverUrl: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                 },
                 {
-                    title: "吹一阵风掉一地叶",
-                    artist: "沙漠丶倾城",
-                    album: "单曲",
-                    duration: "4:42",
-                    // audioUrl: "https://您提供的真实MP3链接/吹一阵风掉一地叶.mp3", // 请替换
-                    audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3", // 示例音乐
-                    coverUrl: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                },
-                {
-                    title: "那天下雨了", // 确保在播放列表中存在
+                    title: "如果没有如果",
                     artist: "沙漠丶倾城",
                     album: "《如果那天没有错过》",
-                    duration: "3:50",
-                    audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3", // 请替换
-                    coverUrl: "https://images.unsplash.com/photo-1437750769465-19377d8c2d8a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    duration: "4:50", // 估计时长，实际播放时会自动获取
+                    // 使用您提供的GitHub MP3链接
+                    audioUrl: "https://github.com/SMQCGF/com/raw/main/%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89%E5%A6%82%E6%9E%9C.mp3",
+                    coverUrl: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                 }
-                // 您可以继续在此处添加更多歌曲，格式参照上方
             ];
 
             // 3. 播放器核心变量
@@ -1055,17 +1097,33 @@
                 }
             }
 
-            // 13. 替换头像
+            // 13. 头像链接已经在HTML中直接更新
             const avatarImg = document.getElementById('artistAvatar');
-            // 请将下面的URL替换为您提供的沙漠倾城真实头像图片链接
-            const realAvatarUrl = "https://via.placeholder.com/200x200/b8860b/ffffff?text=沙漠倾城"; // 示例，请替换
-            avatarImg.src = realAvatarUrl;
+            // 头像图片加载失败处理
             avatarImg.onerror = function() {
-                // 如果图片加载失败，保持默认占位符
                 console.log("头像图片加载失败，请检查URL");
+                // 如果加载失败，使用备用占位符
+                avatarImg.src = "https://via.placeholder.com/200x200/b8860b/ffffff?text=沙漠倾城";
             };
 
-            // 14. 初始化
+            // 14. 社交媒体二维码图片加载失败处理
+            document.querySelectorAll('.qr-code').forEach(qr => {
+                qr.onerror = function() {
+                    console.log("二维码图片加载失败:", this.alt);
+                    // 如果加载失败，使用备用占位符
+                    this.src = "https://via.placeholder.com/100x100/333333/b8860b?text=QR";
+                };
+            });
+
+            // 15. 专辑封面图片加载失败处理
+            const albumCover = document.getElementById('currentAlbumCover');
+            albumCover.onerror = function() {
+                console.log("专辑封面图片加载失败");
+                // 如果加载失败，使用备用占位符
+                this.src = "https://via.placeholder.com/120x120/b8860b/0a0a12?text=Album";
+            };
+
+            // 16. 初始化
             initPlaylist();
             loadSong(0);
             updateSongsGrid();
